@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Road Trip: Vegas to Southern Utah</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .trip-overview {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        .trip-overview h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .overview-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .overview-item {
+            display: flex;
+            align-items: start;
+            gap: 10px;
+        }
+
+        .overview-item strong {
+            color: #667eea;
+            min-width: 120px;
+        }
+
+        .day {
+            margin-bottom: 35px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .day-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 20px;
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+
+        .day-content {
+            padding: 20px;
+        }
+
+        .day-content h3 {
+            color: #667eea;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .day-content h3:first-child {
+            margin-top: 0;
+        }
+
+        .day-content p, .day-content li {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .day-content ul {
+            margin-left: 20px;
+        }
+
+        .day-content li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            border-left: 3px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+
+        .booking-status {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.85em;
+            margin-left: 10px;
+        }
+
+        .booked {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .must-knows {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        .must-knows h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .must-knows ul {
+            margin-left: 20px;
+        }
+
+        .must-knows li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        @media (max-width: 600px) {
+            .overview-grid {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏜️ Vegas to Southern Utah</h1>
+            <p>6-Day Family Road Trip Itinerary</p>
+        </header>
+
+        <div class="content">
+            <div class="trip-overview">
+                <h2>Trip Overview</h2>
+                <div class="overview-grid">
+                    <div class="overview-item">
+                        <strong>Duration:</strong>
+                        <span>6 days / 5 nights</span>
+                    </div>
+                    <div class="overview-item">
+                        <strong>Group:</strong>
+                        <span>2 adults, 2 adult sons</span>
+                    </div>
+                    <div class="overview-item">
+                        <strong>Base:</strong>
+                        <span>Orderville, Utah</span>
+                    </div>
+                    <div class="overview-item">
+                        <strong>Pace:</strong>
+                        <span>Balanced adventure & downtime</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="must-knows">
+                <h2>Must-Have Experiences</h2>
+                <ul>
+                    <li><strong>Zion National Park</strong> — Full-day priority</li>
+                    <li><strong>Bryce Canyon National Park</strong> — Full-day priority</li>
+                    <li><strong>Hiking & nature</strong> — Core activity for all</li>
+                    <li><strong>Scenic drives & overlooks</strong> — Essential to the region</li>
+                    <li><strong>Water activities</strong> — Swimming & river experiences</li>
+                    <li><strong>Las Vegas experience</strong> — Arrival day lobby/casino walk</li>
+                </ul>
+            </div>
+
+            <div class="day">
+                <div class="day-header">Day 1: Sunday — Arrival Day</div>
+                <div class="day-content">
+                    <h3>Flight & Arrival</h3>
+                    <p>Fly into Las Vegas. Land in early afternoon PT. Pick up rental car and begin your southwest adventure.</p>
+
+                    <h3>Afternoon Activity</h3>
+                    <p>Las Vegas Strip walking tour — explore iconic casino lobbies, people watch, and soak in the Vegas energy. Low-key, no gambling focus.</p>
+
+                    <h3>Evening Drive</h3>
+                    <p>Drive to Orderville, Utah (~2.5 hours via I-15 N and US-89). Arrive at your base lodging in the evening. Arrange key access in advance.</p>
+
+                    <div class="highlight">
+                        <strong>Lodging:</strong> AirBnB in Orderville with full kitchen. Check-in at 4:00 PM.
+                    </div>
+                </div>
+            </div>
+
+            <div class="day">
+                <div class="day-header">Day 2: Monday — Kanarra Falls & Kolob Canyons</div>
+                <div class="day-content">
+                    <h3>Morning Hike</h3>
+                    <p>Kanarra Falls hike (3.7 miles, moderate) — slot canyon with creek crossings and waterfalls. Wear water shoes. <strong>Check flash flood forecast before departure.</strong></p>
+
+                    <h3>Afternoon Scenic Drive</h3>
+                    <p>Kolob Canyons scenic loop (15 minutes away). Optional: Timber Creek Overlook Trail for more views.</p>
+
+                    <h3>Late Afternoon Stops in Springdale</h3>
+                    <ul>
+                        <li><strong>Zion Guru:</strong> Narrows gear fitting & pickup (shoes, neoprene socks, walking poles). 2:00–7:30 PM available.</li>
+                        <li><strong>Greater Zion E-Bikes:</strong> Sizing, paperwork, and set early-bird pickup time for tomorrow. Coupon available for one free bike.</li>
+                    </ul>
+
+                    <div class="highlight">
+                        <strong>Permit Required:</strong> Kanarra Falls ($15/person). Book well in advance—August dates fill up fast. 150-person daily cap.
+                    </div>
+                </div>
+            </div>
+
+            <div class="day">
+                <div class="day-header">Day 3: Tuesday — Zion / The Narrows / E-Bikes</div>
+                <div class="day-content">
+                    <h3>Early Morning</h3>
+                    <p>Grab pre-charged e-bikes as early as 4:00 AM (Early Bird Special). Ride into Zion independently—no shuttle lines.</p>
+
+                    <h3>Morning Hike</h3>
+                    <p><strong>The Narrows</strong> — enter from the bottom (Riverside Walk trailhead), hike as far as conditions and energy allow. Best done early before heat and crowds peak. You'll be in the Virgin River—this is the water activity for today.</p>
+
+                    <h3>Afternoon (Energy-Dependent)</h3>
+                    <ul>
+                        <li>Virgin River swimming</li>
+                        <li>Canyon Overlook Trail (moderate scenic hike)</li>
+                        <li>Relax and decompress in Springdale</li>
+                    </ul>
+
+                    <div class="highlight">
+                        <strong>Heat Strategy:</strong> August temps on Zion floor reach 90–105°F. Early morning starts are essential. Bring 1–2L water per person minimum.
+                    </div>
+                </div>
+            </div>
+
+            <div class="day">
+                <div class="day-header">Day 4: Wednesday — Grand Canyon North Rim UTV Tour</div>
+                <div class="day-content">
+                    <h3>Anchor Activity</h3>
+                    <p><strong>North Rim UTV Tour with Expedition Kanab</strong> — 5-hour guided experience. 10:00 AM departure from Kanab (15 min from your base).</p>
+
+                    <p>You can split into two UTVs if preferred, allowing the sons to have their own vehicle. Stunning views, high desert adventure, and a unique perspective on the Grand Canyon's less-visited rim.</p>
+
+                    <h3>Afternoon Optional Activity</h3>
+                    <p><strong>Coral Pink Sand Dunes State Park</strong> (~30 minutes from Kanab) — great add-on if energy allows. Sand dunes, possibly a four-wheeler or hiking option.</p>
+
+                    <div class="booking-status booked">✓ BOOKED</div>
+                </div>
+            </div>
+
+            <div class="day">
+                <div class="day-header">Day 5: Thursday — Bryce Canyon National Park</div>
+                <div class="day-content">
+                    <h3>Pre-Dawn Drive</h3>
+                    <p>Drive from Orderville to Bryce (~1 hour). Arrive at Inspiration Point just before sunrise for the best light and smallest crowds.</p>
+
+                    <h3>Morning Hike</h3>
+                    <p><strong>Queen's Garden + Navajo Loop Combo (2.9 miles, moderate)</strong> — The consensus best single hike in the park. Descend on Queen's Garden from Sunrise Point; climb out via Navajo Loop/Wall Street to Sunset Point.</p>
+
+                    <h3>Sons' Option: Strenuous Add-On</h3>
+                    <p><strong>Fairyland Loop (8 miles, strenuous)</strong> — If the boys want to push further while parents complete the moderate combo hike.</p>
+
+                    <h3>Midday</h3>
+                    <p><strong>Southern Scenic Drive</strong> — Enter from the back of the park to avoid crowd flow. Stop at Natural Bridge and Aqua Canyon viewpoints. Picnic lunch at Rainbow Point (highest point in park).</p>
+
+                    <h3>Afternoon Cooldown</h3>
+                    <p><strong>Mossy Cave Trail (0.9 miles, easy)</strong> — Just outside the park boundary on Route 12. Flat, follows a small stream to a waterfall. Perfect wind-down after a big morning.</p>
+
+                    <h3>Evening</h3>
+                    <p>Last night at the Orderville AirBnB. Pack your bags tonight for a smooth checkout tomorrow morning.</p>
+
+                    <div class="highlight">
+                        <strong>Parking Tip:</strong> Arrive before 9:00 AM or use the free park shuttle. Sunset Point parking fills fast. Bring 0.5L water per person per hour of hiking. No permits required for day hikes.
+                    </div>
+                </div>
+            </div>
+
+            <div class="day">
+                <div class="day-header">Day 6: Friday — Drive Back to Las Vegas</div>
+                <div class="day-content">
+                    <h3>Morning (Short Activity)</h3>
+                    <p>Optional quick stop on the drive back (on the road by 10–11 AM):</p>
+                    <ul>
+                        <li>Buckskin Gulch peek</li>
+                        <li>Moqui Cave in Kanab</li>
+                        <li>Leisurely final checkout</li>
+                    </ul>
+
+                    <h3>Midday Drive</h3>
+                    <p>Drive west toward Las Vegas via St. George.</p>
+
+                    <h3>Afternoon Stop</h3>
+                    <p><strong>Sand Hollow State Park, Hurricane, UT</strong> — On the I-15 corridor, perfect stop on the way back to Vegas. Cliff jumping and swimming available. Don't linger too long; target Vegas arrival by early evening.</p>
+
+                    <h3>Evening</h3>
+                    <p>Check into your Las Vegas hotel. Explore the Strip at your leisure or enjoy dinner on the property.</p>
+
+                    <div class="highlight">
+                        <strong>Lodging:</strong> One night at the Aria on the Las Vegas Strip. Enjoy the evening but keep it relaxed—early flight tomorrow.
+                    </div>
+                </div>
+            </div>
+
+            <div class="day">
+                <div class="day-header">Day 7: Saturday — Departure</div>
+                <div class="day-content">
+                    <h3>Morning Departure</h3>
+                    <p>Check out from hotel and head to the airport. Target security by 10:00 AM for your 11:30 AM flight. Depart hotel ~9:00 AM.</p>
+
+                    <h3>End of Trip</h3>
+                    <p>Safe travels home!</p>
+                </div>
+            </div>
+
+            <div class="must-knows" style="margin-top: 40px;">
+                <h2>Key Logistics & Reminders</h2>
+                <ul>
+                    <li><strong>Transportation:</strong> Rental car from Las Vegas airport</li>
+                    <li><strong>Base Camp:</strong> Orderville AirBnB with full kitchen (ideal location between Zion and Bryce)</li>
+                    <li><strong>America the Beautiful Pass:</strong> $80/year covers Zion + Bryce + all federal parks</li>
+                    <li><strong>Heat Strategy:</strong> Early morning starts for all hikes. Hydrate constantly.</li>
+                    <li><strong>Permits:</strong> Kanarra Falls requires advance booking. No permits needed for day hikes at Bryce or Zion's most popular trails.</li>
+                    <li><strong>E-Bikes & Gear:</strong> Pre-arranged at Springdale outfitters. Eliminates shuttle wait times in Zion.</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>🏜️ Private family itinerary — Dates converted to days of the week for privacy</p>
+        </footer>
+    </div>
+</body>
+</html>
